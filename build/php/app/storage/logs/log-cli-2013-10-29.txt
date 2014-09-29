@@ -1,0 +1,57 @@
+[2013-10-29 21:00:40] log.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('test')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:01:12] log.ERROR: exception 'InvalidArgumentException' with message 'Command "TestCase" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('TestCase')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:01:20] log.ERROR: exception 'InvalidArgumentException' with message 'Command "ExampleTest.php" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('ExampleTest.php')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:06:08] log.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('test')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:23:52] log.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('test')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:26:10] log.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('test')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:27:41] log.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Command\HelpCommand.php(76): Symfony\Component\Console\Application->find('test')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Symfony\Component\Console\Command\HelpCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Symfony\Component\Console\Command\HelpCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2013-10-29 21:27:49] log.ERROR: exception 'InvalidArgumentException' with message 'Command "tests" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('tests')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-10-29 21:27:53] log.ERROR: exception 'InvalidArgumentException' with message 'Command "dfgfd" is not defined.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('dfgfd')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []

@@ -1,0 +1,184 @@
+[2014-03-01 00:50:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:13
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-03-01 00:52:01] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:52:42] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:10] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:14] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:15] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:15] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:16] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:16] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:11
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(11): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 11, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:38] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:12
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(12): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 12, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:53:57] log.ERROR: exception 'ErrorException' with message 'Undefined index: limit' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:12
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(12): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 12, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 00:54:53] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:12
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(12): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 12, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-03-01 18:59:33] log.ERROR: exception 'ErrorException' with message 'Undefined index: id' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:25
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(25): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 25, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []

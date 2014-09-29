@@ -1,0 +1,75 @@
+<div ng-show="!registerSuccess" loading-overlay="loading">
+    <form role="form" name="registerForm" ng-submit="tryToRegister(registerForm)" novalidate>
+        <div class="input-group input-group-sm"
+             tooltip="Nazwa użytkownika"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="text" class="form-control" placeholder="Nazwa Użytkownika" ng-model="registerForm.username">
+            <div class="alert alert-danger" ng-show="warning.username">{{warning.username}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Hasło"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="password" class="form-control" placeholder="Hasło" ng-model="registerForm.password">
+            <div class="alert alert-danger" ng-show="warning.password">{{warning.password}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Powtórz hasło"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="password" class="form-control" placeholder="Powtórz Hasło" ng-model="registerForm.repeatPassword">
+            <div class="alert alert-danger" ng-show="warning.repeatPassword">{{warning.repeatPassword}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Uwagi"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <textarea class="form-control" placeholder="Uwagi" ng-model="registerForm.notes"/>
+            <div class="alert alert-danger" ng-show="warning.notes">{{warning.notes}}</div>
+        </div>
+
+        <div class="input-group">
+            <span>
+                Grupa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <label class="radio-inline">
+                <input type="radio" value="1" ng-model="registerForm.group"> 1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" value="2" ng-model="registerForm.group"> 2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" value="3" ng-model="registerForm.group"> 3
+            </label>
+            <div class="alert alert-danger" ng-show="warning.group">{{warning.group}}</div>
+        </div>
+
+        <div class="input-group">
+            <label class="checkbox-inline">
+                <input type="checkbox" ng-model="registerForm.anonymous" ng-init="registerForm.anonymous = true">
+                Anonimowy&nbsp;&nbsp;
+            </label>
+            <label class="pull-right"
+                   tooltip="Przy wybranych przez ciebie zajęciach nie będzie widoczny twój login"
+                   tooltip-trigger="click"
+                   tooltip-placement="right"
+                   tooltip-append-to-body="true">?</label>
+        </div>
+
+        <div class="row">
+            <a class="btn btn-default col-md-6" ui-sref="login">&lt;- Logowanie</a>
+            <button type="submit" class="btn btn-default col-md-6">Załóż konto</button>
+        </div>
+    </form>
+</div>
+<div ng-show="registerSuccess">
+    <div class="alert alert-success col-md-12">
+        Pomyślnie się zarejestrowano.
+    </div>
+    <a type="submit" class="btn btn-default col-md-12" ui-sref="login">Przejdź do logowania</a>
+</div>

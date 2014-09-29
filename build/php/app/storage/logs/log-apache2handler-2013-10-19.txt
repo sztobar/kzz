@@ -1,0 +1,117 @@
+[2013-10-19 17:36:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-19 17:37:59] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:38:17] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:38:21] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:40:45] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:42:07] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'all'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-19 17:47:21] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:48:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Warehouse_categories' not found' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:593
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-19 17:53:11] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-19 17:55:01] log.ERROR: exception 'ErrorException' with message 'Undefined property: Illuminate\Database\Eloquent\Collection::$category' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php:6
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(6): Illuminate\Exception\Handler->handleError(8, 'Undefined prope...', 'D:\xampp\htdocs...', 6, Array)
+#1 [internal function]: WarehouseController->query()
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []

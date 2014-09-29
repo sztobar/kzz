@@ -1,0 +1,12 @@
+[2013-10-22 19:33:48] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function ModelNotFoundException()' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\AdminController.php:12
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-22 22:05:09] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

@@ -1,0 +1,931 @@
+[2014-02-16 02:06:08] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:52
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 02:07:22] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM)' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:51
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 02:08:25] log.ERROR: exception 'ErrorException' with message 'Undefined index: username' in D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php:16
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(16): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 16, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(9): LoginController->tryToLogin()
+#2 [internal function]: LoginController->request()
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('request', Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'request', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-02-16 02:10:09] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(267): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#11 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Manager.php(129): call_user_func_array(Array, Array)
+#13 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Support\Manager->__call('attempt', Array)
+#14 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Auth\AuthManager->attempt(Array)
+#15 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(17): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#16 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(17): Illuminate\Support\Facades\Auth::attempt(Array)
+#17 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(9): LoginController->tryToLogin()
+#18 [internal function]: LoginController->request()
+#19 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#20 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('request', Array)
+#21 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'request', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#23 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause' (SQL: select * from `Users` where `username` = ? limit 1) (Bindings: array (
+  0 => 'admin',
+))' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(267): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Manager.php(129): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Support\Manager->__call('attempt', Array)
+#13 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Auth\AuthManager->attempt(Array)
+#14 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(17): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(17): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(9): LoginController->tryToLogin()
+#17 [internal function]: LoginController->request()
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('request', Array)
+#20 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'request', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []
+[2014-02-16 02:14:24] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant Auth - assumed 'Auth'' in D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php:29
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(29): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'D:\xampp\htdocs...', 29, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php(9): LoginController->tryToLogin()
+#2 [internal function]: LoginController->request()
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('request', Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'request', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-02-16 02:20:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Users' not found' in D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php:34
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 02:20:44] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Database\Eloquent\Collection::save()' in D:\xampp\htdocs\absynt\build\php\app\controllers\LoginController.php:36
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 10:14:20] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Interface 'UserInterface' not found' in D:\xampp\htdocs\absynt\build\php\app\models\User.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 10:14:46] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Interface 'UserInterface' not found' in D:\xampp\htdocs\absynt\build\php\app\models\User.php:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:48:02] log.ERROR: exception 'ErrorException' with message 'Invalid argument supplied for foreach()' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:38
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(38): Illuminate\Exception\Handler->handleError(2, 'Invalid argumen...', 'D:\xampp\htdocs...', 38, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:51:37] log.ERROR: exception 'ErrorException' with message 'Undefined variable: warehouse' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:39
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(39): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 39, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:52:51] log.ERROR: exception 'ErrorException' with message 'Undefined variable: Warehouse' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:40
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(40): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 40, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:52:51] log.ERROR: exception 'ErrorException' with message 'Undefined variable: Warehouse' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:40
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(40): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 40, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:53:39] log.ERROR: exception 'ErrorException' with message 'Undefined variable: Warehouse' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:40
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(40): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 40, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:53:39] log.ERROR: exception 'ErrorException' with message 'Undefined variable: Warehouse' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:40
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(40): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'D:\xampp\htdocs...', 40, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 20:57:24] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot make static method Illuminate\Database\Eloquent\Model::query() non static in class ResourceModel' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:57:24] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot make static method Illuminate\Database\Eloquent\Model::query() non static in class ResourceModel' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:59:21] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'table'' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:59:21] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'table'' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:8
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:59:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'proteced' (T_STRING), expecting function (T_FUNCTION)' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 20:59:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'proteced' (T_STRING), expecting function (T_FUNCTION)' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:5
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:00:12] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare non static Illuminate\Database\Eloquent\Model::$table as static ResourceModel::$table' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:00:12] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot redeclare non static Illuminate\Database\Eloquent\Model::$table as static ResourceModel::$table' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:02:11] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot make static method Illuminate\Database\Eloquent\Model::query() non static in class ResourceModel' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:02:11] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot make static method Illuminate\Database\Eloquent\Model::query() non static in class ResourceModel' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:04:55] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:04:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:11:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:11:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:6
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:11:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:7
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:11:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\absynt\build\php\app\models\ResourceModel.php:7
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-16 21:16:00] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant query - assumed 'query'' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:42
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'D:\xampp\htdocs...', 42, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 21:16:00] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant query - assumed 'query'' in D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php:42
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'D:\xampp\htdocs...', 42, Array)
+#1 [internal function]: ResourceController->query()
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-16 21:16:54] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'resource' in 'where clause'' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Database\Eloquent\Builder->first()
+#10 [internal function]: ResourceController->query()
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'resource' in 'where clause' (SQL: select * from `resources_timestamps` where `resource` = ? limit 1) (Bindings: array (
+  0 => 'warehouse',
+))' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Database\Eloquent\Builder->first()
+#9 [internal function]: ResourceController->query()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-02-16 21:16:54] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'resource' in 'where clause'' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Database\Eloquent\Builder->first()
+#10 [internal function]: ResourceController->query()
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'resource' in 'where clause' (SQL: select * from `resources_timestamps` where `resource` = ? limit 1) (Bindings: array (
+  0 => 'warehouse',
+))' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(42): Illuminate\Database\Eloquent\Builder->first()
+#9 [internal function]: ResourceController->query()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-02-16 21:19:10] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(52): Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#10 [internal function]: ResourceController->query()
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause' (SQL: select * from `resources_timestamps` where `name` is null) (Bindings: array (
+))' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(52): Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#9 [internal function]: ResourceController->query()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-02-16 21:19:49] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:19:49] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:20:53] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:20:54] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:34:05] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:49:11] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:50:07] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:50:07] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:51:37] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:51:56] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:51:56] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:52:09] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:52:34] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:54:05] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:54:05] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:54:39] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:54:40] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:55:50] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 21:55:58] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:00:02] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:00:15] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:01:10] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:01:11] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:01:23] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:01:23] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:02:33] log.ERROR: exception 'ErrorException' with message 'call_user_func_array() expects parameter 1 to be a valid callback, class 'Illuminate\Auth\Guard' does not have a method 'viaRemember'' in D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Manager.php:129
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'call_user_func_...', 'D:\xampp\htdocs...', 129, Array)
+#1 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Manager.php(129): call_user_func_array(Array, Array)
+#2 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(203): Illuminate\Support\Manager->__call('viaRemember', Array)
+#3 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(203): Illuminate\Auth\AuthManager->viaRemember()
+#4 D:\xampp\htdocs\absynt\build\php\app\filters.php(37): Illuminate\Support\Facades\Facade::__callStatic('viaRemember', Array)
+#5 D:\xampp\htdocs\absynt\build\php\app\filters.php(37): Illuminate\Support\Facades\Auth::viaRemember()
+#6 [internal function]: {closure}(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#7 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(159): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(100): Illuminate\Routing\Route->callFilter('admin', Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(43): Illuminate\Routing\Route->callBeforeFilters(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:13:05] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-16 22:13:05] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php:10
+Stack trace:
+#0 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(10): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 10, Array)
+#1 D:\xampp\htdocs\absynt\build\php\app\controllers\BaseController.php(61): BaseController->successResponse(Array)
+#2 D:\xampp\htdocs\absynt\build\php\app\controllers\ResourceController.php(44): BaseController->resourceResponse(Array)
+#3 [internal function]: ResourceController->query()
+#4 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#6 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\absynt\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\absynt\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []

@@ -1,0 +1,20 @@
+{
+  "name": "kalendarz zarządzania zajęciami",
+  "version": "0.1",
+  "devDependencies": {
+    "angular": "~1.2.0",
+    "angular-mocks": "~1.2.0-rc.3",
+    "bootstrap": "~3.0.3",
+    "angular-bootstrap": "0.10.0",
+    "angular-ui-router": "0.2.7",
+    "jquery": "2.0.3  ",
+    "jquery-ui": "*",
+    "fullcalendar": "*",
+    "angular-ui-calendar": "*",
+    "underscore": "~1.5.2",
+    "underscore.string": "~2.3.3"
+  },
+  "dependencies": {
+    "meny": "~1.4.0"
+  }
+}

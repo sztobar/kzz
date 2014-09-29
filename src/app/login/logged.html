@@ -1,0 +1,47 @@
+<div>
+    <div loading-overlay="loading">
+        <div class="alert alert-info">
+            Użytkownik: {{ user.username }}
+        </div>
+        <div ng-if="user.notes" class="alert alert-info notes">
+            Uwagi: {{ user.notes }}
+        </div>
+        <div class="alert alert-info">
+            Grupa: {{ user.group }}
+        </div>
+        <div class="alert alert-info cursor-help"
+             tooltip="Przy wybranych przez ciebie zajęciach nie będzie widoczny twój login"
+             tooltip-trigger="click"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <p ng-if="user.anonymous">Anonimowy</p>
+            <p ng-if="!user.anonymous">Nieanonimowy</p>
+        </div>
+        <div class="row">
+            <a class="btn btn-default col-md-6" ng-click="logout()">Wyloguj</a>
+            <a class="btn btn-default col-md-6" ui-sref="edit">Edytuj dane</a>
+        </div>
+        <div class="row" ng-if="user.admin" >
+            <a class="btn btn-default col-md-6" ui-sref="register">Załóż konto</a>
+            <a class="btn btn-default col-md-6" ui-sref="userlist">Użytkownicy</a>
+        </div>
+    </div>
+</div>
+<div class="menu-item" loading-overlay="myEventsLoading">
+    Wybrane przedmioty:
+    <div ng-repeat="event in myEvents">
+      <div class="my-event" style="background: {{ event.backgroundColor }}">
+        <div class="event-time">{{ event.start | date:'EEEE'}} {{ event.start | date:'H:mm' }} - {{ event.end | date:'H:mm' }}</div>
+        <div class="event-title">{{ event.title }}</div>
+        <div class="event-teacher">{{ event.teacher }}</div>
+        <div class="event-room">{{ event.room }}</div>
+        <div class="event-type">{{ event.type }}</div>
+      </div>
+    </div>
+    <div ng-if="myEvents.length === 0">
+        Nie masz wybrach żadnych przedmiotów
+    </div>
+    <div class="row">
+        <a class="btn btn-default col-md-12" ng-click="save()">Zapisz wybrane przedmioty</a>
+    </div>
+</div>

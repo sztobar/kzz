@@ -1,0 +1,65 @@
+<div ng-show="!editSuccess" loading-overlay="loading">
+    <div class="alert alert-info">
+        Użytkownik: {{ registerForm.username }}
+    </div>
+    <form role="form" name="registerForm" ng-submit="tryToEdit(registerForm)" novalidate>
+        <div class="input-group input-group-sm"
+             tooltip="Stare hasło"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="password" class="form-control" placeholder="Stare hasło. Wymagane przy zmianie danych." ng-model="registerForm.password">
+            <div class="alert alert-danger" ng-show="warning.password">{{warning.password}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Nowe hasło"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="password" class="form-control" placeholder="Nowe hasło" ng-model="registerForm.newPassword">
+            <div class="alert alert-danger" ng-show="warning.newPassword">{{warning.newPassword}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Powtórz hasło"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <input type="password" class="form-control" placeholder="Powtórz Hasło" ng-model="registerForm.repeatPassword">
+            <div class="alert alert-danger" ng-show="warning.repeatPassword">{{warning.repeatPassword}}</div>
+        </div>
+        <div class="input-group input-group-sm"
+             tooltip="Uwagi"
+             tooltip-trigger="mouseenter"
+             tooltip-placement="right"
+             tooltip-append-to-body="true">
+            <textarea class="form-control" placeholder="Uwagi" ng-model="registerForm.notes"/>
+            <div class="alert alert-danger" ng-show="warning.notes">{{warning.notes}}</div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label class="checkbox-inline">
+                    <input type="checkbox" ng-model="registerForm.anonymous">
+                    Anonimowy&nbsp;&nbsp;
+                </label>
+                <label class="pull-right cursor-help"
+                       tooltip="Przy wybranych przez ciebie zajęciach nie będzie widoczny twój login"
+                       tooltip-trigger="mouseenter"
+                       tooltip-placement="right"
+                       tooltip-append-to-body="true">?</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <a class="btn btn-default col-md-6" ui-sref="logged">&lt;- Wróć</a>
+            <button type="submit" class="btn btn-default col-md-6">Zmień dane</button>
+        </div>
+    </form>
+    <div ng-init="init(registerForm)"></div>
+</div>
+<div ng-show="editSuccess">
+    <div class="alert alert-success col-md-12">
+        Pomyślnie zmieniono dane.
+    </div>
+    <a type="button" class="btn btn-default col-md-12" ui-sref="logged">&lt;- Wróć</a>
+</div>

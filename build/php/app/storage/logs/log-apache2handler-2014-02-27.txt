@@ -1,0 +1,200 @@
+[2014-02-27 17:06:32] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-27 17:07:23] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-27 17:07:25] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-27 17:41:07] log.ERROR: exception 'ErrorException' with message 'Undefined index: newPassword' in D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php:50
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php(50): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 50, Array)
+#1 [internal function]: LoginController->edit()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('edit', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-27 17:41:31] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined function iiset()' in D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php:50
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-27 20:33:14] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-27 21:25:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\BaseController.php:7
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-27 21:25:39] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-27 21:31:45] log.ERROR: exception 'ErrorException' with message 'ksort() expects parameter 1 to be array, object given' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1407
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'ksort() expects...', 'D:\xampp\htdocs...', 1407, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1407): ksort(Object(User))
+#2 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(26): Illuminate\Database\Query\Builder->insert(Array)
+#3 [internal function]: CalendarController->save()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-27 21:32:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-27 21:32:47] log.ERROR: exception 'ErrorException' with message 'ksort() expects parameter 1 to be array, integer given' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1407
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'ksort() expects...', 'D:\xampp\htdocs...', 1407, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1407): ksort(1)
+#2 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(26): Illuminate\Database\Query\Builder->insert(Array)
+#3 [internal function]: CalendarController->save()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-27 21:34:15] log.ERROR: exception 'ErrorException' with message 'ksort() expects parameter 1 to be array, integer given' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1407
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'ksort() expects...', 'D:\xampp\htdocs...', 1407, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1407): ksort(1)
+#2 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(26): Illuminate\Database\Query\Builder->insert(Array)
+#3 [internal function]: CalendarController->save()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-27 23:57:45] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:13
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(13): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 13, Array)
+#1 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(34): CalendarController->getCalendar()
+#2 [internal function]: CalendarController->query()
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-02-27 23:58:46] log.ERROR: exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:274
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 274, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(274): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `usernam...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `usernam...', Array, Object(Closure))
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `usernam...', Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#7 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(20): Illuminate\Database\Query\Builder->get()
+#8 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(34): CalendarController->getCalendar()
+#9 [internal function]: CalendarController->query()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main}
+
+Next exception 'Exception' with message 'Array to string conversion (SQL: select `username`, `choices`.`events_id` from `users` inner join `choices` on `users_id` = `users`.`id` where `choices`.`events_id` = ? and `users`.`anonymous` = ?) (Bindings: array (
+  0 => 
+  array (
+    0 => 1,
+    1 => 5,
+    2 => 12,
+    3 => 16,
+    4 => 2,
+    5 => 6,
+    6 => 8,
+    7 => 9,
+    8 => 17,
+    9 => 18,
+    10 => 4,
+    11 => 15,
+    12 => 3,
+    13 => 7,
+    14 => 10,
+    15 => 11,
+    16 => 13,
+    17 => 14,
+    18 => 19,
+    19 => 20,
+  ),
+  1 => '0',
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'select `usernam...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `usernam...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select `usernam...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(20): Illuminate\Database\Query\Builder->get()
+#6 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(34): CalendarController->getCalendar()
+#7 [internal function]: CalendarController->query()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []

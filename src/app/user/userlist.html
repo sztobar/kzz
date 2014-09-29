@@ -1,0 +1,10 @@
+<div>
+    <div loading-overlay="loading">
+        <div class="row">
+            <a class="btn btn-default col-md-12" ui-sref="logged">Wróc</a>
+        </div>
+        <div class="menu-item">
+            <button class="btn btn-default col-md-12" ng-repeat="user in userlist" ui-sref="edituser({id : user.id})">{{ user.username }}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,712 @@
+[2014-02-28 00:01:01] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.anonymous' in 'where clause'' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(6): Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(35): CalendarController->getCalendar()
+#10 [internal function]: CalendarController->query()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.anonymous' in 'where clause' (SQL: select * from `Events` where `users`.`anonymous` = ?) (Bindings: array (
+  0 => '0',
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(6): Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(35): CalendarController->getCalendar()
+#9 [internal function]: CalendarController->query()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2014-02-28 00:03:18] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::classes()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('classes', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->classes()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('classes', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->classes()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('classes', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->classes()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('classes')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'classes', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:04:06] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::classes()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('classes', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->classes()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('classes', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->classes()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('classes', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->classes()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('classes')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'classes', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:05:28] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::Classes()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('Classes', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->Classes()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('Classes', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->Classes()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('Classes', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->Classes()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('Classes')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'Classes', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:06:08] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::EventClasses()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('EventClasses', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->EventClasses()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('EventClasses', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->EventClasses()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('EventClasses', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->EventClasses()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('EventClasses')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'EventClasses', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:07:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'classes' not found' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:641
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-28 00:07:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Classes' not found' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:641
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-28 00:08:08] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'classes.events_id' in 'where clause'' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasMany->get()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'classes', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'classes.events_id' in 'where clause' (SQL: select * from `classes` where `classes`.`events_id` in (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 1,
+  1 => 2,
+  2 => 3,
+  3 => 4,
+  4 => 5,
+  5 => 6,
+  6 => 7,
+  7 => 8,
+  8 => 9,
+  9 => 10,
+  10 => 11,
+  11 => 12,
+  12 => 13,
+  13 => 14,
+  14 => 15,
+  15 => 16,
+  16 => 17,
+  17 => 18,
+  18 => 19,
+  19 => 20,
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasMany->get()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'classes', Object(Closure))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#13 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#15 [internal function]: CalendarController->query()
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#19 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#20 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#26 {main} [] []
+[2014-02-28 00:09:17] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::types()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('types', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->types()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('types', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->types()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('types', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->types()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('types')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'types', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:12:18] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::users()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 [internal function]: Illuminate\Database\Query\Builder->__call('users', Array)
+#1 [internal function]: Illuminate\Database\Query\Builder->users()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(786): call_user_func_array(Array, Array)
+#3 [internal function]: Illuminate\Database\Eloquent\Builder->__call('users', Array)
+#4 [internal function]: Illuminate\Database\Eloquent\Builder->users()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2653): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Illuminate\Database\Eloquent\Model->__call('users', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->users()
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('users')
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'users', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#16 [internal function]: CalendarController->query()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2014-02-28 00:15:38] log.ERROR: exception 'ErrorException' with message 'Use of undefined constant events_id - assumed 'events_id'' in D:\xampp\htdocs\kzz\build\php\app\models\Events.php:15
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\models\Events.php(15): Illuminate\Exception\Handler->handleError(8, 'Use of undefine...', 'D:\xampp\htdocs...', 15, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(526): Events->choices()
+#2 [internal function]: Illuminate\Database\Eloquent\Builder->Illuminate\Database\Eloquent\{closure}()
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(159): call_user_func(Object(Closure))
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(527): Illuminate\Database\Eloquent\Relations\Relation::noConstraints(Object(Closure))
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(495): Illuminate\Database\Eloquent\Builder->getRelation('choices')
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'choices', Object(Closure))
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#8 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#10 [internal function]: CalendarController->query()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-02-28 00:25:23] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.users_id' in 'where clause'' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'user', Object(Closure))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasMany->get()
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'choices', Object(Closure))
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#20 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#21 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#22 [internal function]: CalendarController->query()
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#25 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#26 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#27 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#28 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#29 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#30 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#31 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#32 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#33 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'users.users_id' in 'where clause' (SQL: select * from `users` where `users`.`users_id` in (?, ?, ?, ?, ?, ?) and `anonymous` = ?) (Bindings: array (
+  0 => 25,
+  1 => 26,
+  2 => 27,
+  3 => 28,
+  4 => 29,
+  5 => 30,
+  6 => '0',
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1028): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1018): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1005): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'user', Object(Closure))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#13 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasMany->get()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'choices', Object(Closure))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#19 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(8): Illuminate\Database\Eloquent\Builder->get()
+#20 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): CalendarController->getCalendar()
+#21 [internal function]: CalendarController->query()
+#22 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#23 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#24 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#25 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#26 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#27 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#28 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#29 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#30 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#31 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#32 {main} [] []
+[2014-02-28 00:29:47] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Users' not found' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:593
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-28 10:01:22] log.ERROR: exception 'ErrorException' with message 'include(D:\xampp\htdocs\kzz\build\php/app/models/User.php): failed to open stream: No such file or directory' in D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(D:\xamp...', 'D:\xampp\htdocs...', 185, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('User')
+#3 D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php(34): spl_autoload_call('User')
+#4 [internal function]: LoginController->register()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#8 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main} [] []
+[2014-02-28 10:01:32] log.ERROR: exception 'ErrorException' with message 'include(D:\xampp\htdocs\kzz\build\php/app/models/User.php): failed to open stream: No such file or directory' in D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(D:\xamp...', 'D:\xampp\htdocs...', 185, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('User')
+#3 D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php(34): spl_autoload_call('User')
+#4 [internal function]: LoginController->register()
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#8 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#15 {main} [] []
+[2014-02-28 10:39:38] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:27
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(27): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 27, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-28 10:40:02] log.ERROR: exception 'ErrorException' with message 'Trying to get property of non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(28): Illuminate\Exception\Handler->handleError(8, 'Trying to get p...', 'D:\xampp\htdocs...', 28, Array)
+#1 [internal function]: CalendarController->save()
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2014-02-28 10:42:42] log.ERROR: exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 353, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#6 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(33): Illuminate\Database\Query\Builder->delete()
+#7 [internal function]: CalendarController->save()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'Array to string conversion (SQL: delete from `choices` where `events_id` = ?) (Bindings: array (
+  0 => 
+  array (
+    0 => 11,
+    1 => 10,
+    2 => 13,
+    3 => 19,
+    4 => 15,
+    5 => 5,
+  ),
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'delete from `ch...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(33): Illuminate\Database\Query\Builder->delete()
+#5 [internal function]: CalendarController->save()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2014-02-28 11:01:34] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '_in' in 'where clause'' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:351
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(351): PDO->prepare('delete from `ch...')
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ch...', Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#5 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): Illuminate\Database\Query\Builder->delete()
+#6 [internal function]: CalendarController->save()
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '_in' in 'where clause' (SQL: delete from `choices` where `_in` = ?) (Bindings: array (
+  0 => 'events_id',
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from `ch...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(37): Illuminate\Database\Query\Builder->delete()
+#5 [internal function]: CalendarController->save()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2014-02-28 11:18:42] log.ERROR: exception 'ErrorException' with message 'Array to string conversion' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:353
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(8, 'Array to string...', 'D:\xampp\htdocs...', 353, Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(353): PDOStatement->execute(Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#6 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(42): Illuminate\Database\Query\Builder->delete()
+#7 [internal function]: CalendarController->save()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main}
+
+Next exception 'Exception' with message 'Array to string conversion (SQL: delete from `choices` where `events_id` in (?)) (Bindings: array (
+  0 => 
+  array (
+    'id' => 121,
+    'users_id' => 1,
+    'events_id' => 5,
+  ),
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(ErrorException), 'delete from `ch...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(42): Illuminate\Database\Query\Builder->delete()
+#5 [internal function]: CalendarController->save()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2014-02-28 11:23:06] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:351
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(351): PDO->prepare('delete from `ch...')
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'delete from `ch...', Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#5 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(42): Illuminate\Database\Query\Builder->delete()
+#6 [internal function]: CalendarController->save()
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#10 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#17 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 (SQL: delete from `choices` where `events_id` in ()) (Bindings: array (
+))' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'delete from `ch...', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(356): Illuminate\Database\Connection->run('delete from `ch...', Array, Object(Closure))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connection.php(313): Illuminate\Database\Connection->affectingStatement('delete from `ch...', Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1511): Illuminate\Database\Connection->delete('delete from `ch...', Array)
+#4 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(42): Illuminate\Database\Query\Builder->delete()
+#5 [internal function]: CalendarController->save()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('save', Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'save', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2014-02-28 11:36:49] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php(55): Illuminate\Routing\Controllers\Controller->__call('getCalendar', Array)
+#2 D:\xampp\htdocs\kzz\build\php\app\controllers\LoginController.php(55): LoginController->getCalendar()
+#3 [internal function]: LoginController->edit()
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('edit', Array)
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'edit', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2014-02-28 18:36:10] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2014-02-28 18:38:56] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\xampp\htdocs\kzz\build\php\app\filters.php:39
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-28 18:40:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

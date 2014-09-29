@@ -1,0 +1,45 @@
+[2013-10-27 17:22:01] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '@i:=@i+1' in 'field list'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `@i:=@i+...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `@i:=@i+...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `@i:=@i+...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `@i:=@i+...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(22): Illuminate\Database\Query\Builder->get()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(9): WarehouseController->getWarehouse()
+#8 [internal function]: WarehouseController->queryWarehouse()
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('queryWarehouse', Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'queryWarehouse', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '@i:=@i+1' in 'field list' (SQL: select `@i:=@i+1` as `index`, `w`.`id`, `w`.`name`, `wc`.`name` as `category`, `w`.`unit`, `w`.`amount` from `Warehouse` as `w` inner join `Warehouse_categories` as `wc` on `wc`.`id` = `w`.`Warehouse_categories_id`) (Bindings: array (
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `@i:=@i+...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `@i:=@i+...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `@i:=@i+...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(22): Illuminate\Database\Query\Builder->get()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(9): WarehouseController->getWarehouse()
+#7 [internal function]: WarehouseController->queryWarehouse()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('queryWarehouse', Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'queryWarehouse', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []

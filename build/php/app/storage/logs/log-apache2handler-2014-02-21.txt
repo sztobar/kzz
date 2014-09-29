@@ -1,0 +1,48 @@
+[2014-02-21 21:31:16] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method CalendarController::callAction()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php:985
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2014-02-21 21:33:48] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'sztobar'@'localhost' to database 'kzz'' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'sztobar', 'Kupa1234!', Array)
+#1 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(242): Illuminate\Database\DatabaseManager->connection()
+#6 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->__call('table', Array)
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Database\DatabaseManager->table('events')
+#8 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(6): Illuminate\Support\Facades\Facade::__callStatic('table', Array)
+#9 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(6): Illuminate\Support\Facades\DB::table('events')
+#10 [internal function]: CalendarController->query()
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#13 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#15 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main} [] []
+[2014-02-21 21:37:35] log.ERROR: exception 'BadMethodCallException' with message 'Call to undefined method Illuminate\Database\Query\Builder::toArray()' in D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:1658
+Stack trace:
+#0 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(10): Illuminate\Database\Query\Builder->__call('toArray', Array)
+#1 D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php(10): Illuminate\Database\Query\Builder->toArray()
+#2 [internal function]: CalendarController->query()
+#3 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('query', Array)
+#5 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'query', Array)
+#6 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#7 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#8 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#9 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#10 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\kzz\build\php\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\kzz\build\php\public\index.php(49): Illuminate\Foundation\Application->run()
+#13 {main} [] []
+[2014-02-21 21:38:52] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\kzz\build\php\app\controllers\CalendarController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

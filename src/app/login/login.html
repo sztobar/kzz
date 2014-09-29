@@ -1,0 +1,14 @@
+<div loading-overlay="loading">
+    <form role="form" name="userForm" ng-submit="tryToLogin(userForm)">
+        <div class="alert alert-info">Proszę się zalogować</div>
+        <div class="input-group input-group-sm">
+            <input type="text" class="form-control" auto-fill-sync placeholder="Nazwa Użytkownika" ng-model="userForm.username">
+        </div>
+        <div class="input-group input-group-sm">
+            <input type="password" class="form-control" auto-fill-sync placeholder="Hasło" ng-model="userForm.password">
+        </div>
+        <div class="row">
+            <button class="btn btn-default col-md-12">Zaloguj</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,717 @@
+[2013-10-25 19:23:55] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 19:27:53] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toJSON() on a non-object' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:123
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 19:29:19] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:29:54] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:30:02] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:31:00] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:31:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:32:43] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' with message 'Controller method not found.' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php:290
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(302): Illuminate\Routing\Controllers\Controller->missingMethod(Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): Illuminate\Routing\Controllers\Controller->__call('isThereSuchIngr...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:35:01] log.ERROR: exception 'ErrorException' with message 'Undefined index: warehouse' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:147
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(147): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 147, Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(129): MenuController->getIngredient('1', 4)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:35:52] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:146
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 19:36:28] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:147
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 19:37:12] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function toArray() on a non-object' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:147
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 19:37:32] log.ERROR: exception 'ErrorException' with message 'Undefined index: warehouse' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:149
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(149): Illuminate\Exception\Handler->handleError(8, 'Undefined index...', 'D:\xampp\htdocs...', 149, Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(129): MenuController->getIngredient('1', 4)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#3 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 19:39:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Ingredient' not found' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:138
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 19:40:23] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOne.php(14): Illuminate\Database\Eloquent\Builder->first()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2053): Illuminate\Database\Eloquent\Relations\HasOne->getResults()
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2535): Illuminate\Database\Eloquent\Model->getAttribute('warehouse')
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2569): Illuminate\Database\Eloquent\Model->__get('warehouse')
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(108): Illuminate\Database\Eloquent\Model->offsetGet('warehouse')
+#14 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause' (SQL: select * from `Warehouse` where `Warehouse`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => 1,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\HasOne.php(14): Illuminate\Database\Eloquent\Builder->first()
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2053): Illuminate\Database\Eloquent\Relations\HasOne->getResults()
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2535): Illuminate\Database\Eloquent\Model->getAttribute('warehouse')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2569): Illuminate\Database\Eloquent\Model->__get('warehouse')
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(108): Illuminate\Database\Eloquent\Model->offsetGet('warehouse')
+#13 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-10-25 19:42:28] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'Warehouse', Object(Closure))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(147): Illuminate\Database\Eloquent\Builder->first()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 4)
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#18 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#21 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause' (SQL: select * from `Warehouse` where `Warehouse`.`Warehouse_id` in (?)) (Bindings: array (
+  0 => 1,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'Warehouse', Object(Closure))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(147): Illuminate\Database\Eloquent\Builder->first()
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 4)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#17 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#22 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []
+[2013-10-25 19:43:22] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'Warehouse', Object(Closure))
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(147): Illuminate\Database\Eloquent\Builder->first()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 4)
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#18 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#21 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#22 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#24 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#25 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#28 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#29 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Warehouse.Warehouse_id' in 'where clause' (SQL: select * from `Warehouse` where `Warehouse`.`Warehouse_id` in (?)) (Bindings: array (
+  0 => 1,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 [internal function]: Illuminate\Database\Eloquent\Builder->get()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Relations\Relation.php(271): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\Relation->__call('get', Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(506): Illuminate\Database\Eloquent\Relations\HasOne->get()
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(475): Illuminate\Database\Eloquent\Builder->loadRelation(Array, 'Warehouse', Object(Closure))
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(139): Illuminate\Database\Eloquent\Builder->eagerLoadRelations(Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(147): Illuminate\Database\Eloquent\Builder->first()
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 4)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 4)
+#17 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'malinowy', '100')
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'malinowy', '100')
+#22 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main} [] []
+[2013-10-25 19:53:49] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Ingredients i' doesn't exist' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Ingredients i' doesn't exist (SQL: select * from `Ingredients i` inner join `Menu m` on `i`.`Menu_id` = `m`.`id` inner join `Menu_Categories mc` on `m`.`Menu_categories_id` = `mc`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 19:54:43] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Menu_Categories' doesn't exist' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Menu_Categories' doesn't exist (SQL: select * from `Ingredients` as `i` inner join `Menu` as `m` on `i`.`Menu_id` = `m`.`id` inner join `Menu_Categories` as `mc` on `m`.`Menu_categories_id` = `mc`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 19:55:15] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Ingredients i' doesn't exist' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'Produkty.Ingredients i' doesn't exist (SQL: select * from `Ingredients i` inner join `Menu m` on `i`.`Menu_id` = `m`.`id` inner join `Menu_categories mc` on `m`.`Menu_categories_id` = `mc`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(151): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 19:55:33] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Cannot use object of type stdClass as array' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:108
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 20:01:39] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'i.price' in 'field list'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `mc`.`na...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `mc`.`na...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `mc`.`na...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `mc`.`na...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'i.price' in 'field list' (SQL: select `mc`.`name` as `categoryName`, `w`.`name` as `name`, `i`.`price`, `m`.`id` as `orderId` from `Ingredients` as `i` inner join `Menu` as `m` on `i`.`Menu_id` = `m`.`id` inner join `Menu_categories` as `mc` on `mc`.`id` = `m`.`Menu_categories_id` inner join `Warehouse` as `w` on `i`.`Warehouse_id` = `w`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `mc`.`na...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `mc`.`na...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `mc`.`na...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 20:02:17] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mc.name' in 'field list'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `mc`.`na...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `mc`.`na...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `mc`.`na...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `mc`.`na...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mc.name' in 'field list' (SQL: select `mc`.`name` as `categoryName`, `w`.`name` as `name`, `i`.`amount`, `m`.`id` as `orderId` from `Ingredients` as `i` inner join `Menu` as `m` on `i`.`Menu_id` = `m`.`id` inner join `Warehouse_categories` as `wc` on `wc`.`id` = `w`.`Warehouse_categories_id` inner join `Warehouse` as `w` on `i`.`Warehouse_id` = `w`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `mc`.`na...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `mc`.`na...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `mc`.`na...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 20:02:25] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'w.Warehouse_categories_id' in 'on clause'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `wc`.`na...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `wc`.`na...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `wc`.`na...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `wc`.`na...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#10 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#14 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#20 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#21 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'w.Warehouse_categories_id' in 'on clause' (SQL: select `wc`.`name` as `categoryName`, `w`.`name` as `name`, `i`.`amount`, `m`.`id` as `orderId` from `Ingredients` as `i` inner join `Menu` as `m` on `i`.`Menu_id` = `m`.`id` inner join `Warehouse_categories` as `wc` on `wc`.`id` = `w`.`Warehouse_categories_id` inner join `Warehouse` as `w` on `i`.`Warehouse_id` = `w`.`id` where `i`.`Menu_id` = ? and `i`.`Warehouse_id` = ? limit 1) (Bindings: array (
+  0 => '1',
+  1 => 33,
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `wc`.`na...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `wc`.`na...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `wc`.`na...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(989): Illuminate\Database\Query\Builder->get(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(153): Illuminate\Database\Query\Builder->first()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(131): MenuController->getIngredient('1', 33)
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php(105): MenuController->isThereSuchIngredient('1', 33)
+#9 [internal function]: MenuController->addNewIngredient('1', 'Sok', 'jab??kowy', '20')
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('addNewIngredien...', Array)
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'addNewIngredien...', Array)
+#13 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}('1', 'Sok', 'jab??kowy', '20')
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#19 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#20 {main} [] []
+[2013-10-25 20:40:09] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method stdClass::toArray()' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\MenuController.php:153
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 20:40:47] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Undefined class constant 'FETCH_ASOC'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\config\database.php:16
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 20:57:36] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'w.Menu_categories_id' in 'on clause'' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select `w`.`nam...')
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select `w`.`nam...', Array)
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `w`.`nam...', Array, Object(Closure))
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `w`.`nam...', Array)
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(21): Illuminate\Database\Query\Builder->get()
+#7 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(9): WarehouseController->getWarehouse()
+#8 [internal function]: WarehouseController->queryWarehouse()
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('queryWarehouse', Array)
+#11 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'queryWarehouse', Array)
+#12 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#18 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#19 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'w.Menu_categories_id' in 'on clause' (SQL: select `w`.`name` as `name`, `wc`.`name` as `category`, `w`.`unit` as `unit` from `Warehouse` as `w` inner join `Warehouse_categories` as `wc` on `wc`.`id` = `w`.`Menu_categories_id`) (Bindings: array (
+))' in D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select `w`.`nam...', Array)
+#1 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select `w`.`nam...', Array, Object(Closure))
+#2 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select `w`.`nam...', Array)
+#3 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(21): Illuminate\Database\Query\Builder->get()
+#6 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\app\controllers\WarehouseController.php(9): WarehouseController->getWarehouse()
+#7 [internal function]: WarehouseController->queryWarehouse()
+#8 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('queryWarehouse', Array)
+#10 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'queryWarehouse', Array)
+#11 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#12 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#13 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#14 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#15 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#16 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#17 D:\xampp\htdocs\ng-boilerplate-jade\src\ajax\public\index.php(49): Illuminate\Foundation\Application->run()
+#18 {main} [] []
